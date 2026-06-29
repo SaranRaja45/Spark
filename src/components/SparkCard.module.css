@@ -1,0 +1,35 @@
+.card {
+    background: var(--white);
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 0 16px 12px;
+}
+.header {
+    display: flex; align-items: center;
+    gap: 8px; margin-bottom: 12px;
+}
+.username { font-weight: 500; font-size: 13px;}
+.time { font-size: 11px; color: var(--mid); margin-left: auto; }
+.text {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 17px; line-height: 1.6;
+    margin-bottom: 12px;
+}
+.footer { display: flex; align-items: center; }
+.tag {
+    background: var(--spark-bg);
+    color: var(--spark);
+    font-size: 11px; font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+.actions { display: flex; gap: 12px; margin-left: auto; }
+.action {
+    background: none; border: none;
+    font-size: 13px; color: var(--mid);
+    cursor: pointer; display: flex;
+    align-items: center; gap: 4px;
+}
+.liked { color: var(--spark); font-weight: 600; }

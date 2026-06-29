@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {box-sizing: border-box; margin: 0;padding: 0;}
+
+:root{
+    --spark: #E8721A;
+    --spark-dim: #FAD199;
+    --spark-bg: #FFF8F2;
+    --dark: #1A1612;
+    --mid: #5A4F45;
+    --light: #E8E2DA;
+    --surface: #FAF7F4;
+    --white: #FFFFFF;
+    --border: #E8E2DA;
+    --font-serif: 'Instrument Serif', serif;
+    --font-sans: 'DM Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-sans);
+    background: var(--surface);
+    color: var(--dark);
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+}

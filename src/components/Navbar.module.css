@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 100%; max-width: 480px;
+    background: var(--white);
+    border-top: 0.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 64px;
+    z-index: 100;
+}
+.item {
+    display: flex; flex-direction: column;
+    align-items: center; gap: 3px;
+    text-decoration: none;
+    color: var(--mid);
+    font-size: 10px; font-weight: 500;
+    padding: 8px 12px;
+}
+.active {color: var(--spark); }
+.icon {font-size: 20px; }
+.label {font-size: 10px; }
+.postBtn {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--spark);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+}

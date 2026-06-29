@@ -1,0 +1,48 @@
+.page { padding-bottom: 80px; }
+.topbar {
+    background: var(--white);
+    border-bottom: 0.5px solid var(--border);
+    padding: 16px 20px 12px;
+    position: sticky; top: 0;
+}
+.title { font-family: var(--font-serif); font-style: italic; font-size: 22px; }
+.sub { font-size: 12px; color: var(--mid); margin-top: 2px; }
+.content { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; color: var(--mid); }
+.textarea {
+    width: 100%; min-height: 140px;
+    font-family: var(--font-serif); font-style: italic;
+    font-size: 18px; line-height: 1.6;
+    border: 0.5px solid var(--border); border-radius: 12px;
+    padding: 14px; resize: none;
+    background: var(--white); color: var(--dark);
+    outline: none;
+}
+.textarea:focus { border-color: var(--spark-dim); }
+.charCount { font-size: 11px; text-align: right; margin-top: -8px; }
+.tagInput {
+    width: 100%; padding: 10px 14px;
+    border: 0.5px solid var(--border); border-radius: 10px;
+    font-size: 14px; font-family: var(--font-sans);
+    background: var(--white); outline: none;
+}
+.tagSuggestions { display: flex; flex-wrap: wrap; gap: 8px; }
+.tagChip {
+    padding: 5px 12px; border-radius: 999px;
+    border: 0.5px solid var(--border);
+    background: var(--white); font-size: 12px;
+    color: var(--mid); cursor: pointer;
+}
+.tagChipActive { background: var(--spark); color: white; border-color: var(--spark); }
+.hint {
+    background: var(--spark-bg); border-radius: 10px;
+    padding: 12px 14px; font-size: 12px; color: var(--mid); line-height: 1.6;
+}
+.hint strong { color: var(--spark); display: block; margin-bottom: 4px; }
+.postBtn {
+    width: 100%; padding: 14px;
+    background: var(--spark); color: white;
+    border: none; border-radius: 12px;
+    font-size: 15px; font-weight: 500; cursor: pointer;
+}
+.postBtn:disabled { opacity: 0.4; }
