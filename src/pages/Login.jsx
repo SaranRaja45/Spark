@@ -81,16 +81,22 @@ export default function Login() {
                     spellCheck="false"
                     required
                 />
-                <div>
-                <input
-                    className={styles.input}
-                    type={showPassword ? "text" : "password"}
-                    placeholder="password"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                    required
-                />
-                <button onClick={() => setShowPassword(!showPassword)}>{showPassword?"👀":"😒"}</button>
+                <div className={styles.passwordWrap}>
+                    <input
+                        className={styles.input}
+                        type={showPassword ? "text" : "password"}
+                        placeholder="password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        required
+                    />
+                    <button
+                        type="button"
+                        className={styles.eyeBtn}
+                        onClick={() => setShowPassword(!showPassword)}
+                    >
+                        {showPassword ? "🐵" : "🙈"}
+                    </button>
                 </div>
                 {error && <p className={styles.error}>{error}</p>}
                 <button className={styles.btn} type="submit" disabled={loading}>

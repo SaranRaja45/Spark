@@ -45,3 +45,25 @@
 }
 .error { color: #c0392b; font-size: 13px; text-align: center; padding: 8px; background: #fdecea; border-radius: 8px; }
 .privacy { font-size: 12px; color: var(--mid); display: flex; align-items: center; gap: 6px; }
+
+.passwordWrap {
+    position: relative;
+    width: 100%;
+}
+
+.passwordWrap .input {
+    padding-right: 44px;
+}
+
+.eyeBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+}
