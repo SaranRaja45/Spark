@@ -8,6 +8,7 @@ export default function Login() {
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -80,14 +81,17 @@ export default function Login() {
                     spellCheck="false"
                     required
                 />
+                <div>
                 <input
                     className={styles.input}
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     placeholder="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     required
                 />
+                <button onClick={() => setShowPassword(!showPassword)}>{showPassword?"👀":"😒"}</button>
+                </div>
                 {error && <p className={styles.error}>{error}</p>}
                 <button className={styles.btn} type="submit" disabled={loading}>
                     {loading ? 'Please wait...' : isSignup ? 'Create account' : 'Sign in'}
