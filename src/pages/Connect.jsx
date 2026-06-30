@@ -97,7 +97,7 @@ export default function Connect() {
                 {/* Chat Header */}
                 <div className={styles.chatHeader}>
                     <button className={styles.backBtn} onClick={() => setActiveConvo(null)}>
-                        ⬅️Back
+                        ⬅️
                     </button>
                     <Avatar username={activeConvo.otherName} size={34} />
                     <div>
@@ -128,7 +128,7 @@ export default function Connect() {
                 {/* Input Row */}
                 <div className={styles.inputRow}>
                     <textarea className={styles.msgInput} placeholder="Message..." value={draft} onChange={e => setDraft(e.target.value)} onKeyDown={handleKeyDown} rows={1} />
-                    <button className={styles.sendBtn} onClick={sendMessage} disabled={!draft.trim()}> Send 🕊️ </button>
+                    <button className={styles.sendBtn} onClick={sendMessage} disabled={!draft.trim()}> 🕊️ </button>
                 </div>
             </div>
         )
