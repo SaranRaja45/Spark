@@ -100,7 +100,6 @@ export default function SparkCard({ spark }) {
                     > 
                         🔥 {likeCount} 
                     </button>
-                    <button className={styles.action}>💬 {spark.comments || 0} </button>
                     {!isOwnSpark && (
                         <button
                             className={`${styles.action} ${msgSent ? styles.msgSent : ''}`}
